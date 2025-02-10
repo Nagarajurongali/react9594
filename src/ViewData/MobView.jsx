@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+
 import { Mobiles } from '../Data/MobileData'
 import { Row, Col } from 'react-bootstrap'
 import Sidenav from '../Components/Sidenav'
+import { Link } from 'react-router-dom'
 function MobView() {
     console.log(Mobiles)
     return (
@@ -11,15 +12,19 @@ function MobView() {
                     <Sidenav />
                 </Col>
                 <Col sm={10}>
-                    <div className='d-flex flex-wrap justify-content-around'>
+                    <div className=' d-flex flex-wrap justify-content-around'>
                         {
                             Mobiles.map((e) => (
-                                <div className='border p-4 '>
-                                    <p>{e.id}</p>
-                                    <p>{e.Brand}</p>
-                                    <p>{e.Model}</p>
-                                    <p>{e.Price}</p>
-                                </div>
+                                <Link to={`/mobiles/${e.id}`}>
+                                    <div className='products border p-4 '>
+                                        <img src={e.img} alt="" />
+                                        <p>{e.id}</p>
+                                        <p>{e.Brand}</p>
+                                        <p>{e.Model}</p>
+                                        <p>{e.Price}</p>
+                                    </div>
+                                </Link>
+                                
                             ))
                         }
 

@@ -8,7 +8,9 @@ import Dashboard from './Modules/Dashboard';
 import New from './Modules/New';
 import DataFetching from './Modules/DataFetching';
 import MobView from './ViewData/MobView';
-import MobComp from './Components/MobComp';
+import AcView from './ViewData/AcView';
+import MobDet from './ViewData/ProductDetails/MobDet';
+
 function App() {
   return (
     <div>
@@ -20,6 +22,8 @@ function App() {
           <Route path='/new' element={<New />} />
           <Route path='/fetching' element={<DataFetching />} />
           <Route path='/mobiles' element={<MobView />} />
+          <Route path='/mobiles/:id' element={<MobDet />} />
+          <Route path='/acdata' element={<AcView />} />
         </Routes>
       </Router>
       

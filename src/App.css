@@ -1,3 +1,7 @@
 .sidenavbar{
   height: 100vh;
 }
+.products img{
+  width: 250px;
+  height: 200px;
+}
