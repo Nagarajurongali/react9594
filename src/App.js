@@ -10,6 +10,9 @@ import DataFetching from './Modules/DataFetching';
 import MobView from './ViewData/MobView';
 import AcView from './ViewData/AcView';
 import MobDet from './ViewData/ProductDetails/MobDet';
+import CompOne from './Datapassing/Porps/CompOne';
+import CompA from './Datapassing/UseContext/CompA';
+import Loginpage from './Pages/Loginpage';
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Login />} />
+          <Route path='/login' element={<Loginpage />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/new' element={<New />} />
@@ -24,6 +28,8 @@ function App() {
           <Route path='/mobiles' element={<MobView />} />
           <Route path='/mobiles/:id' element={<MobDet />} />
           <Route path='/acdata' element={<AcView />} />
+          <Route path='/props' element={<CompOne />} />
+          <Route path='/usecontext' element={<CompA />} />
         </Routes>
       </Router>
       
