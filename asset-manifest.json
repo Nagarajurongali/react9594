@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react9594/static/css/main.7ab56dcb.css",
+    "main.js": "/react9594/static/js/main.e7feb18c.js",
+    "static/media/Benefits_of_AC.avif": "/react9594/static/media/Benefits_of_AC.b1232f219fed77a0cc4e.avif",
+    "index.html": "/react9594/index.html",
+    "main.7ab56dcb.css.map": "/react9594/static/css/main.7ab56dcb.css.map",
+    "main.e7feb18c.js.map": "/react9594/static/js/main.e7feb18c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ab56dcb.css",
+    "static/js/main.e7feb18c.js"
+  ]
+}
