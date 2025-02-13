@@ -19,7 +19,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/react9594' element={<Login />} />
           <Route path='/login' element={<Loginpage />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/dashboard' element={<Dashboard />} />
